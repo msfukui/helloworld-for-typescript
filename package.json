@@ -2,14 +2,20 @@
   "name": "helloworld-for-typescript",
   "version": "0.0.1",
   "description": "`Hello world` for TypeScript",
-  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/lib/index.ts",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "msfukui",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^13.7.0",
     "rimraf": "^3.0.1",
     "typescript": "^3.7.5"
   }
