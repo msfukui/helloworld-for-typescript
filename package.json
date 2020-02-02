@@ -1,0 +1,16 @@
+{
+  "name": "helloworld-for-typescript",
+  "version": "0.0.1",
+  "description": "`Hello world` for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "msfukui",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.1",
+    "typescript": "^3.7.5"
+  }
+}
