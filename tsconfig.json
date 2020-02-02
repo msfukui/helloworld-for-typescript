@@ -9,7 +9,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "types": ["node", "jest"]
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["**/*.test.ts"]
 }

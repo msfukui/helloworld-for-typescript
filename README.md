@@ -13,4 +13,19 @@ $ npm i -D typescript rimraf
 ..
 $ npm i -D @types/node
 ..
+$ npm i -D jest @types/jest ts-jest
+..
+```
+
+## build & test & view the coverage report
+
+```
+$ npm build
+..
+$ node -e "require('dist').main()"
+Hello world
+$ npm t
+..
+$ npx http-server -o coverage/lcov-report
+..
 ```
