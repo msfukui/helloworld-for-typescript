@@ -6,6 +6,8 @@
 
 c.f. https://qiita.com/matzkoh/items/90baab22ad489b78384b
 
+VSCode extentions are not setting.
+
 ## Setup
 
 ```
@@ -31,3 +33,27 @@ $ npm t
 $ npx http-server -o coverage/lcov-report
 ..
 ```
+
+## Lint
+
+```
+$ npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort prettier
+..
+$ npm i -D npm-run-all
+..
+$ npm run lint
+..
+$ npm run fix
+..
+```
+
+## Commit hook's setup
+
+```
+$ npm i -D husky lint-staged
+..
+```
+
+## CI setup
+
+Use github actions.
