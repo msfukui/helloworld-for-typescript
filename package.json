@@ -4,15 +4,20 @@
   "description": "`Hello world` for TypeScript",
   "repository": "https://github.com/msfukui/helloworld-for-typescript.git",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "main": "dist/lib/index.ts",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "bin": {
     "helloworld-for-typescript": "dist/src/index.js"
   },
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc",
+    "build": "run-p build:*",
+    "build:common": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json",
     "fix": "run-p fix:*",
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "npm run lint:prettier -- --write",
