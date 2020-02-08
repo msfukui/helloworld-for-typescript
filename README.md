@@ -1,5 +1,7 @@
 # helloworld-for-typescript
 
+![](https://github.com/msfukui/helloworld-for-typescript/workflows/Node.js%20CI/badge.svg)
+
 `Hello world` for TypeScript
 
 c.f. https://qiita.com/matzkoh/items/90baab22ad489b78384b
