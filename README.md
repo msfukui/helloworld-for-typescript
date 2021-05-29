@@ -6,14 +6,14 @@
 
 VSCode extentions are not setting.
 
-## Setup
+## Set up
 
 ```
 $ npm install
 ..
 ```
 
-## Build & Test & View the coverage report
+## Build & test & view the coverage report
 
 ```
 $ npm run build
@@ -41,12 +41,9 @@ or
 $ npm run fix
 ```
 
-## Commit hook's setup
+## Set up pre-commit hook
 
-```
-$ npm i -D husky lint-staged
-..
-```
+husky and lint-staged have already been set up.
 
 ## CI setup
 
@@ -98,4 +95,8 @@ Use github actions.
 
   TypeScript + Jest での power-assert の使い方 issue 。
 
-  babel-preset-power-assert は..いらないのかな..?
+  現時点では babel を使わないと動作しない模様。。
+
+- typicode/husky - Modern native Git hooks made easy 🐶 woof!
+
+  https://github.com/typicode/husky

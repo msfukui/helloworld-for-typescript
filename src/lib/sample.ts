@@ -1,2 +1,1 @@
-export function main(): void {
-}
+export function main(): void {}

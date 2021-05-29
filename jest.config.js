@@ -9,10 +9,8 @@ module.exports = {
   globals: {
     "ts-jest": {
       babelConfig: {
-        presets: [
-          "power-assert"
-        ]
-      }
-    }
-  }
+        presets: ["power-assert"],
+      },
+    },
+  },
 };
