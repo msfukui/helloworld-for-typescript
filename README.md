@@ -4,47 +4,41 @@
 
 `Hello world` for TypeScript
 
-c.f. https://qiita.com/matzkoh/items/90baab22ad489b78384b
-
 VSCode extentions are not setting.
 
 ## Setup
 
 ```
-$ npm init -y
-..
-$ npm i -D typescript rimraf
-..
-$ npm i -D @types/node
-..
-$ npm i -D jest @types/jest ts-jest
+$ npm install
 ..
 ```
 
-## build & test & view the coverage report
+## Build & Test & View the coverage report
 
 ```
-$ npm build
+$ npm run build
 ..
-$ node -e "require('dist').main()"
+$ node -e "require('./dist/lib').main()"
 Hello world
-$ npm t
+$ npm test
 ..
 $ npx http-server -o coverage/lcov-report
 ..
 ```
 
-## Lint
+## Lint & Format
 
 ```
-$ npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort prettier
-..
-$ npm i -D npm-run-all
-..
 $ npm run lint
 ..
-$ npm run fix
+$ npm run format
 ..
+```
+
+or
+
+```
+$ npm run fix
 ```
 
 ## Commit hook's setup
@@ -57,3 +51,43 @@ $ npm i -D husky lint-staged
 ## CI setup
 
 Use github actions.
+
+## Ref
+
+- この TypeScript が Hello, world! のくせに慎重すぎる - Qiita
+
+  https://qiita.com/matzkoh/items/90baab22ad489b78384b
+
+  このリポジトリを作成する際に参考にした記事です。
+
+- Prettier 入門 ～ ESLint との違いを理解して併用する～ - Qiita
+
+  https://qiita.com/soarflat/items/06377f3b96964964a65d
+
+  このリポジトリをメンテする際に参考にした記事です。
+
+- eslint-config-prettier
+
+  https://github.com/prettier/eslint-config-prettier
+
+  ESLint を Prettier と組み合わせて使う場合に、Prettier と競合するルールを自動でオフにする ESLint の拡張機能。
+
+- Definition for rule 'simple-import-sort/sort' was not found simple-import-sort/sort | stackoverflow
+
+  https://stackoverflow.com/questions/64905158/definition-for-rule-simple-import-sort-sort-was-not-found-simple-import-sort-s
+
+  ESLint の simple-import-sort/sort の名前の変更について。
+
+  v6 から simple-import-sort/sort → simple-import-sort/imports に名前が変更されている。
+
+- npm run のスクリプトを連続実行・並列実行する (npm-run-all) | まくまく Node.js ノート
+
+  https://maku77.github.io/nodejs/npm/npm-run-all.html
+
+  npm-run-all のわかりやすい説明。
+
+- npm run のスクリプトの中でディレクトリの削除を行う (rimraf) | まくまく Node.js ノート
+
+  https://maku77.github.io/nodejs/npm/npm-run-rimraf.html
+
+  rimraf のわかりやすい説明。

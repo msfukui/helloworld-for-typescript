@@ -7,14 +7,13 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "prettier",
   ],
   plugins: ["simple-import-sort"],
   env: {
     es6: true,
     node: true,
-    jest: true
+    jest: true,
   },
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
@@ -24,22 +23,22 @@ module.exports = {
     "import/order": "off",
     "no-console": "off",
     "no-empty": ["error", { allowEmptyCatch: true }],
-    "simple-import-sort/sort": "error",
-    "sort-imports": "off"
+    "simple-import-sort/imports": "error",
+    "sort-imports": "off",
   },
   overrides: [
     {
       files: "*.js",
       rules: {
         "import/order": ["error", { "newlines-between": "always" }],
-        "simple-import-sort/sort": "off"
-      }
+        "simple-import-sort/imports": "off",
+      },
     },
     {
       files: ["*.{config,d,test}.ts"],
       rules: {
-        "@typescript-eslint/no-explicit-any": "off"
-      }
-    }
-  ]
+        "@typescript-eslint/no-explicit-any": "off",
+      },
+    },
+  ],
 };
