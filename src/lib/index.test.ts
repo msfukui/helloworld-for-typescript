@@ -1,4 +1,4 @@
-import { main } from ".";
+import { main } from "./index";
 
 describe("main()", () => {
   it("print message", () => {

@@ -91,3 +91,11 @@ Use github actions.
   https://maku77.github.io/nodejs/npm/npm-run-rimraf.html
 
   rimraf のわかりやすい説明。
+
+- how to use with jest #53
+
+  https://github.com/power-assert-js/espower-typescript/issues/53
+
+  TypeScript + Jest での power-assert の使い方 issue 。
+
+  babel-preset-power-assert は..いらないのかな..?
